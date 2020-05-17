@@ -1,0 +1,30 @@
+<svg id="Scroll_down" data-name="Scroll down" xmlns="http://www.w3.org/2000/svg" width="26.062" height="57.125" viewBox="0 0 26.062 57.125">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke: #4ca9ff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        opacity: 0.6;
+      }
+
+      .cls-3 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path id="Kształt_1" data-name="Kształt 1" class="cls-1" d="M789.368,789.682L800,800.292l10.632-10.61" transform="translate(-786.969 -747)"/>
+  <path id="Kształt_1_kopia" data-name="Kształt 1 kopia" class="cls-2" d="M789.368,769.341L800,779.951l10.632-10.61" transform="translate(-786.969 -747)"/>
+  <path id="Kształt_1_kopia_2" data-name="Kształt 1 kopia 2" class="cls-3" d="M789.368,748L800,758.61,810.632,748" transform="translate(-786.969 -747)"/>
+</svg>

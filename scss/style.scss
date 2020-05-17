@@ -1,0 +1,325 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header{
+    background-color: #4822a8;
+    background-image: url(../images/top_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+    &__content{
+
+    }
+}
+.title{
+    position: absolute;
+    padding: 0 15px;
+    left: 0;
+    right: 0;
+    top: 30vh;
+    font-size: 88px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 0px 50px 30px rgba(64, 72, 90, 0.3);
+    padding-bottom: 50px;
+    &--blue{
+        color: $accent;
+    }
+}
+.scroll{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    &__text{
+        padding-right: 20px;
+    }
+    &__burger{
+        width: 25px;
+        height: 16px;
+        border-top: 2px solid $accent;
+        border-bottom: 2px solid $accent;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background: $accent;
+            height: 2px;
+            width: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+    &__dropdown{
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: $accent;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        a{
+            display: block;
+            color: #fff;
+            padding: 5px;
+            &:hover{
+                background-color: #4a24a8;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.about{
+    padding-top: 100px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__subtitle{
+        color: #000;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &__text{
+        max-width: 670px;
+    }
+}
+.separator{
+    padding-top: 100px;
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 25%;     
+    }
+    &__pic{
+        width: 100%;
+    }
+}
+.work{
+    padding-top: 100px;
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+        padding: 20px;
+        margin: 20px;
+        max-width: 370px;
+        text-align: center;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0px 30px 60px 0px rgba(64, 72, 90, 0.15);
+            transform: translateY(-20px);
+        }
+        &-pic{
+            padding-bottom: 40px;
+            display: block;
+            margin: 0 auto;
+            height: 160px;
+            &:hover{
+                stroke: #4822a8;
+                fill: #4822a8;
+            }
+        }
+        &-title{
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+    &__link{
+        text-align: center;
+        display: block;
+        padding: 20px 0;
+        color: $accent;
+        text-transform: uppercase;
+    }
+}
+.app{
+    background-image: url(../images/app-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 100px 0;
+    position: relative;
+    &__slider-item{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+    &__gallery{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr{
+        max-width: 570px;
+        padding-right: 30px;
+        &-title{
+            color: #fff;
+            font-size: 62px;
+            line-height: 76px;
+            font-weight: 300;
+            margin: 25px 0;
+        }
+        &-text{
+            color: #cfd2ff;
+            margin-bottom: 70px;
+        }
+    }
+    &__pic{
+        border-radius: 5px;
+        &--right{
+            padding-left: 70px;
+            margin-top: 30px;
+            height: 100%;
+        }
+    }
+    &__btn{
+        padding: 15px 30px;
+        background-color: #4ca9ff;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 40px;
+        transition: all .3s;
+        &:hover{
+            background-color: #1b86eb;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__nav{
+        &-wrapper{
+            padding-right: 20px;
+        }
+        &-item{
+            padding-top: 20px;
+            width: 270px;
+            color: #cfd2ff;
+            cursor: pointer;
+        }
+        &-suptitle{
+            font-size: 16px;
+        }
+        &-title{
+            font-size: 24px;
+            color: #fff;
+        }
+
+    }
+
+    
+}
+.app__nav{
+    .slick-slide{
+        padding-right: 60px;
+    }
+    .slick-current{
+        .app__nav-wrapper{
+            border-top: 2px solid #fff
+        }
+    }
+}
+
+
+.twitter{
+    padding-bottom: 100px;
+    &__logo{
+        display: table;
+        margin: 30px auto;
+    }
+    &__pic{
+        width: 100px;
+        opacity: .3;
+    }
+    &__author{
+        padding-left: 70px;
+        background-repeat: no-repeat;
+        height: 100px;
+        &-name{
+            padding-top: 8px;
+        }
+    }
+    &__box{
+        max-width: 730px;
+        padding: 40px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 40px;
+        transition: all .2s;
+    }
+    &__text{
+        padding-bottom: 30px;
+    }
+}
+
+.twitter__slider{
+    .slick-current{
+        .twitter__box{
+            box-shadow: 0px 9px 27px 0px rgba(0,0,0,0.75);
+        }
+    }
+}
+.footer{
+    padding: 80px 0 30px;
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &__logo{
+        margin-bottom: 30px;
+    }
+    &__descr{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__text{
+        padding-top: 10px;
+        max-width: 670px;
+        color: #cfd2ff;
+    }
+    &__end{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #cfd2ff;
+    }
+}
+
+@import "media";
