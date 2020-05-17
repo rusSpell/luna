@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luna - digital agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__pic" src="images/Logo.png" alt="Luna - Digital Agency">
+          </a>
+        </div>
+        <div class="menu" onclick="myFunction()">
+          <div class="menu__text">Menu</div>
+          <div class="menu__burger"></div>
+          <div class="menu__dropdown" id="menu__dropdown">
+            <a href="#!">Главная</a>
+            <a href="#!">О нас</a>
+            <a href="#!">Контакты</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__content">
+        <h1 class="title">Мы делаем <span class="title--blue">Web</span> лучше</h1>
+        <a class="scroll animated fadeInDown infinite slow" id="toabout" href="#"><img class="scroll__pic" src="images/scroll-down.svg" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <h2 class="section__title" data-aos="fade-right" data-aos-duration="1500">
+          О нас
+        </h2>
+        <div class="about__text" data-aos="fade-left" data-aos-duration="1500">
+          <p class="about__subtitle">Начните создание своего сайта уже сейчас!</p>
+          <p>Наша студия специализируется на создании, разработке дизайна и программировании сайтов. Основной вид нашей
+            деятельности – разработка крупных интернет магазинов с синхронизацией 1С.</p>
+          <p>За 8 лет на рынке СНГ мы хорошо понимаем реалии работы и знаем, как помочь клиентам решать широкий спектр
+            бизнес-задач.
+            Ищете подрядчика для создания сайта с нуля?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="separator">
+    <div class="separator__inner">
+      <div class="separator__item">
+        <img class="separator__pic" src="images/separator1.jpg" alt="">
+      </div>
+      <div class="separator__item">
+        <img class="separator__pic" src="images/separator2.jpg" alt="">
+      </div>
+      <div class="separator__item">
+        <img class="separator__pic" src="images/separator3.jpg" alt="">
+      </div>
+      <div class="separator__item">
+        <img class="separator__pic" src="images/separator4.jpg" alt="">
+      </div>
+    </div>
+  </section>
+     
+  <section class="work">
+    <div class="container">
+      <h2 class="section__title section__title--centr">
+        Что мы делаем?
+      </h2>
+      <div class="work__inner">
+        <div class="work__item" data-aos="fade-up" data-aos-duration="1000">
+          <img class="work__item-pic" src="images/work1.svg" alt="">
+          <h3 class="work__item-title">
+            Потрясающий дизайн
+          </h3>
+          <p class="work__item-descr">
+            Мы не множим шаблоны. Наши дизайнеры следят за тенденциями и сделают для вас современный, удобный и
+            отзывчивый дизайн сайта. Каждый наш сайт уникален и по-своему хорош.
+          </p>
+        </div>
+        <div class="work__item" data-aos="fade-up" data-aos-duration="2000">
+          <img class="work__item-pic" src="images/work2.png" alt="">
+          <h3 class="work__item-title">
+            Лучшая разработка
+          </h3>
+          <p class="work__item-descr">
+            Разрабатываем и автоматизируем. Упрощаем и модернизируем. Ваш сайт будет правильно отображаться во всех
+            современных браузерах, на мобильных и планшетах.
+          </p>
+        </div>
+        <div class="work__item" data-aos="fade-up" data-aos-duration="3000">
+          <img class="work__item-pic" src="images/work3.png" alt="">
+          <h3 class="work__item-title">
+            Web-продвижение
+          </h3>
+          <p class="work__item-descr">
+            Оптимизация вашего сайта под требования поисковых систем, привлечение посетителей
+            на ваш сайт, увеличение конверсии посетителей в покупателей.
+          </p>
+        </div>
+      </div>
+      <a class="work__link" href="#">Показать всё</a>
+    </div>
+  </section>
+  <section class="app">
+    <div class="container">
+      <div class="app__slider">
+
+        <div class="app__wrapper">
+          <div class="app__slider-item">
+            <div class="app__descr">
+              <h3 class="app__descr-title">
+                <span class="title--blue">Payme</span> Mobile App
+              </h3>
+              <p class="app__descr-text">
+                Payme - это лучший и самый простой способ создать собственное приложение для мобильных платежей и
+                добавить
+                столько информации, сколько вам нужно. Идеальная база для создания удивительного приложения с простой
+                навигацией и интуитивно понятным интерфейсом.
+              </p>
+              <a class="app__btn" href="#!">Смотреть все кейсы</a>
+            </div>
+            <div class="app__gallery">
+              <img class="app__pic" src="images/app1.png" alt="">
+              <img class="app__pic app__pic--right" src="images/app2.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="app__wrapper">
+          <div class="app__slider-item">
+            <div class="app__descr">
+              <h3 class="app__descr-title">
+                <span class="title--blue">Interactive</span> Agency
+              </h3>
+              <p class="app__descr-text">
+                Payme - это лучший и самый простой способ создать собственное приложение для мобильных платежей и
+                добавить
+                столько информации, сколько вам нужно. Идеальная база для создания удивительного приложения с простой
+                навигацией и интуитивно понятным интерфейсом.
+              </p>
+              <a class="app__btn" href="#!">Смотреть все кейсы</a>
+            </div>
+            <div class="app__gallery">
+              <img class="app__pic" src="images/app1.png" alt="">
+              <img class="app__pic app__pic--right" src="images/app2.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="app__wrapper">
+          <div class="app__slider-item">
+            <div class="app__descr">
+              <h3 class="app__descr-title">
+                <span class="title--blue">Android.ru</span> Website
+              </h3>
+              <p class="app__descr-text">
+                Payme - это лучший и самый простой способ создать собственное приложение для мобильных платежей и
+                добавить
+                столько информации, сколько вам нужно. Идеальная база для создания удивительного приложения с простой
+                навигацией и интуитивно понятным интерфейсом.
+              </p>
+              <a class="app__btn" href="#!">Смотреть все кейсы</a>
+            </div>
+            <div class="app__gallery">
+              <img class="app__pic" src="images/app1.png" alt="">
+              <img class="app__pic app__pic--right" src="images/app2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="app__wrapper">
+          <div class="app__slider-item">
+            <div class="app__descr">
+              <h3 class="app__descr-title">
+                <span class="title--blue">Virtus</span> Dashboard
+              </h3>
+              <p class="app__descr-text">
+                Payme - это лучший и самый простой способ создать собственное приложение для мобильных платежей и
+                добавить
+                столько информации, сколько вам нужно. Идеальная база для создания удивительного приложения с простой
+                навигацией и интуитивно понятным интерфейсом.
+              </p>
+              <a class="app__btn" href="#!">Смотреть все кейсы</a>
+            </div>
+            <div class="app__gallery">
+              <img class="app__pic" src="images/app1.png" alt="">
+              <img class="app__pic app__pic--right" src="images/app2.png" alt="">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="app__nav">
+        <div class="app__nav-wrapper">
+          <div class="app__nav-item">
+            <div class="app__nav-suptitle">
+              Mobile Apps &#149; UX/UI
+            </div>
+            <div class="app__nav-title">
+              Payme Mobile App
+            </div>
+          </div>
+        </div>
+        <div class="app__nav-wrapper">
+          <div class="app__nav-item">
+            <div class="app__nav-suptitle">
+              Websites &#149; UX/UI
+            </div>
+            <div class="app__nav-title">
+              Interactive Agency
+            </div>
+          </div>
+        </div>
+        <div class="app__nav-wrapper">
+          <div class="app__nav-item">
+            <div class="app__nav-suptitle">
+              Websites &#149; UX/UI
+            </div>
+            <div class="app__nav-title">
+              Android.ru Website
+            </div>
+          </div>
+        </div>
+        <div class="app__nav-wrapper">
+          <div class="app__nav-item">
+            <div class="app__nav-suptitle">
+              Web Apps &#149; UX/UI
+            </div>
+            <div class="app__nav-title">
+              Virtus Dashboard
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="twitter">
+    <a class="twitter__logo" href="#!">
+      <svg viewBox="0 0 24 24" class="twitter__pic">
+        <g>
+          <path
+            d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z">
+          </path>
+        </g>
+      </svg>
+    </a>
+    <div class="twitter__slider">
+      <div class="twitter__item">
+        <div class="twitter__box">
+          <div class="twitter__text">
+            <span class="title--blue">#PaymeApp</span> выиграла награду Apple Design Award! Большое спасибо
+            <span class="title--blue">@DigitalStudio!</span>
+            Они агрессивно пробуют новые технологии и новый дизайн
+            методы. Лучшие ребята, с которыми я работал.
+          </div>
+          <div class="twitter__author" style="background-image: url(images/author.jpg);">
+            <div class="twitter__author-name">Frank Underwood</div>
+            <div class="twitter__author-tag">@PresidentFrank</div>
+          </div>
+        </div>
+      </div>
+      <div class="twitter__item">
+        <div class="twitter__box">
+          <div class="twitter__text">
+            <span class="title--blue">#PaymeApp</span> выиграла награду Apple Design Award! Большое спасибо
+            <span class="title--blue">@DigitalStudio!</span>
+            Они агрессивно пробуют новые технологии и новый дизайн
+            методы. Лучшие ребята, с которыми я работал.
+          </div>
+          <div class="twitter__author" style="background-image: url(images/author.jpg);">
+            <div class="twitter__author-name">Frank Underwood</div>
+            <div class="twitter__author-tag">@PresidentFrank</div>
+          </div>
+        </div>
+      </div>
+      <div class="twitter__item">
+        <div class="twitter__box">
+          <div class="twitter__text">
+            <span class="title--blue">#PaymeApp</span> выиграла награду Apple Design Award! Большое спасибо
+            <span class="title--blue">@DigitalStudio!</span>
+            Они агрессивно пробуют новые технологии и новый дизайн
+            методы. Лучшие ребята, с которыми я работал.
+          </div>
+          <div class="twitter__author" style="background-image: url(images/author.jpg);">
+            <div class="twitter__author-name">Frank Underwood</div>
+            <div class="twitter__author-tag">@PresidentFrank</div>
+          </div>
+        </div>
+      </div>
+      <div class="twitter__item">
+        <div class="twitter__box">
+          <div class="twitter__text">
+            <span class="title--blue">#PaymeApp</span> выиграла награду Apple Design Award! Большое спасибо
+            <span class="title--blue">@DigitalStudio!</span>
+            Они агрессивно пробуют новые технологии и новый дизайн
+            методы. Лучшие ребята, с которыми я работал.
+          </div>
+          <div class="twitter__author" style="background-image: url(images/author.jpg);">
+            <div class="twitter__author-name">Frank Underwood</div>
+            <div class="twitter__author-tag">@PresidentFrank</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="logo footer__logo">
+        <a class="logo__link" href="#">
+          <img class="logo__pic" src="images/Logo.png" alt="Luna - Digital Agency">
+        </a>
+      </div>
+      <div class="footer__descr">
+        <p class="footer__text">Мы с удовольствием ответим на все Ваши вопросы.
+          Звоните, пишите, приезжайте к нам в гости!</p>
+        <a class="app__btn" href="#!">Напишите нам</a>
+      </div>
+      <hr>
+      <div class="footer__end">
+        <p>Copyright © 2020. <span class="title--blue">LUNA STUDIO</span>. All rights reserved.</p>
+        <p>DESIGNED with <span class="title--blue">LOVE</span></p>
+      </div>
+    </div>
+  </footer> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
